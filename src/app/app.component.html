@@ -1,0 +1,10 @@
+<dx-file-uploader
+  name="file"
+  accept="image/*"
+  uploadUrl="https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/ChunkUpload"
+  [chunkSize]="10000"
+  (onUploadStarted)="onUploadStarted($event)"
+  (onProgress)="onUploadProgress($event)"
+  (onFilesUploaded)="onFileUploaded($event)"
+  (onUploadError)="onUploadError($event)"
+></dx-file-uploader>
